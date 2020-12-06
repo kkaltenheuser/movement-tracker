@@ -1,7 +1,7 @@
 {
   "name": "mongoose_skeleton",
   "version": "1.0.0",
-  "description": "",
+  "description": "# Unit 17 Nosql Homework: Workout Tracker",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,7 +16,17 @@
     "express": "^4.17.1",
     "mongoose": "^5.11.4",
     "morgan": "^1.10.0",
+    "node": "^15.3.0",
     "nodemon": "^2.0.6",
     "path": "^0.12.7"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkaltenheuser/movement-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kkaltenheuser/movement-tracker/issues"
+  },
+  "homepage": "https://github.com/kkaltenheuser/movement-tracker#readme"
 }
