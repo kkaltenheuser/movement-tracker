@@ -4,7 +4,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 
 // initiate + set foundation for port 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -18,7 +18,7 @@ app.use(express.static("public"));
 
 // initiate connection to MongoDB
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/columbia-university',
+  process.env.MONGODB_URI || "mongodb://localhost/workout",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -29,8 +29,8 @@ mongoose.connect(
 
 
 // routes
-app.use(require("./routes/api.js"));
-app.use(require("./routes/view.js"));
+app.use(require("./routes/api-routes"));
+app.use(require("./routes/html-routes"));
 
 // initiate listening on server / port
 app.listen(PORT, () => {
